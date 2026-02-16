@@ -1,0 +1,495 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ddd9d9;
+}
+.header {
+    background-color: #ccc8c8;
+    padding: 10px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__logo img {
+    max-height: 120px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #b22222;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.header__link:hover {
+    color: #8b0000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header__contacts {
+    text-align: right;
+    font-size: 14px;
+}
+
+.header__phone {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.header__social {
+    display: flex;
+    gap: 10px;
+}
+
+.header__social-icon {
+    width: 32px;
+    height: 31.5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.main {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.banner {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.banner__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(50%);
+}
+
+.banner__text {
+    position: absolute;
+    bottom: 50px;
+    left: 470px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.banner__title {
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info__block {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info__image {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #b22222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #8b0000;
+}
+
+.button--wide {
+    padding: 20px 80px;
+}
+
+.button--big {
+    padding: 25px 45px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.show {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.show__city {
+    font-size: 36px;
+    color: #b22222;
+    margin-bottom: 10px;
+}
+
+.show__dates {
+    font-size: 26px;
+    color: rgba(53, 55, 114, 1);
+    margin-bottom: 20px;
+}
+
+.show__description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.show__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: rgba(215, 215, 215, 1);
+    border-radius: 10px;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-height: 400px;
+}
+
+.card__image {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    filter: brightness(80%);
+}
+
+.card__title {
+    font-size: 26px;
+    margin: 15px 0;
+    color: #000000;
+}
+
+.card__label {
+    font-size: 20px;
+    color: #000000;
+}
+
+.gift {
+    background-image: url('image/задний фон.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gift__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.gift__text {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+.features {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.features__title {
+    font-size: 27px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.features__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.features__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 280px;
+}
+
+.features__icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.features__subtitle {
+    font-size: 24px;
+    color: #000000;
+    margin:  10px 0;
+}
+
+.features__text {
+    font-size: 14px;
+    color: #aa0000;
+    line-height: 1.6;
+}
+
+
+.footer {
+    background-color: #d0cac8;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__logo img {
+    max-height: 120px;
+}
+
+.footer__info {
+    text-align: left;
+    max-width: 300px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+    font-size: 15px;
+}
+
+.footer__link {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__bottom {
+    border-top: 1px solid #000;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+@media (max-width: 1024px) {
+    .header__container {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header__nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header__contacts {
+        text-align: center;
+    }
+
+    .banner__text {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+        font-size: 24px;
+    }
+
+    .show__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .gift__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gift__text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 0 10px;
+    }
+
+    .banner {
+        height: 220px;
+    }
+
+    .banner__text {
+        font-size: 20px;
+        bottom: 30px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info__block {
+        width: 100%;
+    }
+
+    .show__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .features__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer__info {
+        text-align: center;
+    }
+
+    .footer__links {
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__link {
+        font-size: 16px;
+    }
+
+    .banner__text {
+        font-size: 18px;
+    }
+
+    .show__city {
+        font-size: 28px;
+    }
+
+    .show__dates {
+        font-size: 20px;
+    }
+
+    .show__description {
+        font-size: 16px;
+    }
+
+    .gift__text {
+        font-size: 18px;
+    }
+
+    .features__subtitle {
+        font-size: 20px;
+    }
+}
